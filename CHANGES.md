@@ -12,6 +12,7 @@ Improvements 🙌:
 Bugfix 🐛:
  - Double bottomsheet effect after verify with passphrase
  - Show preview when sending attachment from the keyboard (#2440)
+ - Do not compress GIFs (#1616, #1254)
 
 Translations 🗣:
  -
