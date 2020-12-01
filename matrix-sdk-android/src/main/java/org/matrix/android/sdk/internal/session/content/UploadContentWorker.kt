@@ -29,6 +29,7 @@ import org.matrix.android.sdk.api.session.room.model.message.MessageContent
 import org.matrix.android.sdk.api.session.room.model.message.MessageFileContent
 import org.matrix.android.sdk.api.session.room.model.message.MessageImageContent
 import org.matrix.android.sdk.api.session.room.model.message.MessageVideoContent
+import org.matrix.android.sdk.api.util.MimeTypes
 import org.matrix.android.sdk.internal.crypto.attachments.MXEncryptedAttachments
 import org.matrix.android.sdk.internal.crypto.model.rest.EncryptedFileInfo
 import org.matrix.android.sdk.internal.database.mapper.ContentMapper
@@ -153,7 +154,7 @@ internal class UploadContentWorker(val context: Context, params: WorkerParameter
 
                 if (attachment.type == ContentAttachmentData.Type.IMAGE
                         // Do not compress gif
-                        && attachment.mimeType != "image/gif"
+                        && attachment.mimeType != MimeTypes.Gif
                         && params.compressBeforeSending) {
                     fileToUpload = imageCompressor.compress(context, workingFile, MAX_IMAGE_SIZE, MAX_IMAGE_SIZE)
                             .also { compressedFile ->
