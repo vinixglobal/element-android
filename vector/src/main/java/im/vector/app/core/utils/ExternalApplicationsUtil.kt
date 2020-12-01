@@ -369,7 +369,7 @@ fun saveMedia(context: Context, file: File, title: String, mediaMimeType: String
             notificationUtils.buildDownloadFileNotification(
                     uri,
                     filename,
-                    mediaMimeType ?: "application/octet-stream"
+                    mediaMimeType ?: MimeTypes.OctetStream
             ).let { notification ->
                 notificationUtils.showNotificationMessage("DL", uri.hashCode(), notification)
             }
@@ -409,7 +409,7 @@ private fun saveMediaLegacy(context: Context, mediaMimeType: String?, title: Str
                         savedFile.name,
                         title,
                         true,
-                        mediaMimeType ?: "application/octet-stream",
+                        mediaMimeType ?: MimeTypes.OctetStream,
                         savedFile.absolutePath,
                         savedFile.length(),
                         true)

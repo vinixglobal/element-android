@@ -194,7 +194,7 @@ internal class UploadContentWorker(val context: Context, params: WorkerParameter
                     Timber.v("## FileService: Uploading file")
 
                     fileUploader
-                            .uploadFile(tmpEncrypted, attachment.name, "application/octet-stream", progressListener)
+                            .uploadFile(tmpEncrypted, attachment.name, MimeTypes.OctetStream, progressListener)
                 } else {
                     Timber.v("## FileService: Clear file")
                     fileUploader
@@ -256,7 +256,7 @@ internal class UploadContentWorker(val context: Context, params: WorkerParameter
                             val encryptionResult = MXEncryptedAttachments.encryptAttachment(thumbnailData.bytes.inputStream(), thumbnailData.mimeType)
                             val contentUploadResponse = fileUploader.uploadByteArray(encryptionResult.encryptedByteArray,
                                     "thumb_${params.attachment.name}",
-                                    "application/octet-stream",
+                                    MimeTypes.OctetStream,
                                     thumbnailProgressListener)
                             UploadThumbnailResult(
                                     contentUploadResponse.contentUri,

@@ -21,6 +21,7 @@ import org.matrix.android.sdk.api.extensions.orFalse
 // The Android SDK does not provide constant for mime type, add some of them here
 object MimeTypes {
     const val Any: String = "*/*"
+    const val OctetStream = "application/octet-stream"
 
     const val Images = "image/*"
 
