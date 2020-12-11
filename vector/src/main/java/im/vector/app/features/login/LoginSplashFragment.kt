@@ -16,8 +16,10 @@
 
 package im.vector.app.features.login
 
+import android.content.Intent
 import butterknife.OnClick
 import im.vector.app.R
+import im.vector.app.features.login.LoginAction.*
 import javax.inject.Inject
 
 /**
@@ -29,7 +31,9 @@ class LoginSplashFragment @Inject constructor() : AbstractLoginFragment() {
 
     @OnClick(R.id.loginSplashSubmit)
     fun getStarted() {
-        loginViewModel.handle(LoginAction.PostViewEvent(LoginViewEvents.OpenServerSelection))
+        loginViewModel.handle(LoginAction.UpdateSignMode(SignMode.SignInWithMatrixId))
+        //loginViewModel.handle(LoginAction.UpdateServerType(ServerType.MatrixOrg))
+        //loginViewModel.handle(LoginAction.UpdateSignMode(SignMode.SignIn))
     }
 
     override fun resetViewModel() {

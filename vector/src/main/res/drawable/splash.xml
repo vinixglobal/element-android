@@ -5,7 +5,7 @@
     android:opacity="opaque">
 
     <!-- Background color -->
-    <item android:drawable="@color/riotx_accent" />
+    <item android:drawable="@color/white" />
 
     <!-- Centered logo -->
     <item>

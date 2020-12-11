@@ -18,6 +18,7 @@ package im.vector.app.features.login
 
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import androidx.autofill.HintConstants
@@ -96,8 +97,13 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
     @OnClick(R.id.loginSubmit)
     fun submit() {
         cleanupUi()
+        //Add logic to avoid concatenating this if a "@" is found
 
-        val login = loginField.text.toString()
+
+        var login = loginField.text.toString()
+        if (!(login.contains("@", ignoreCase = true) && login.contains(":", ignoreCase = true))) {
+            login = "@" + login + ":vinix.im"
+        }
         val password = passwordField.text.toString()
 
         // This can be called by the IME action, so deal with empty cases

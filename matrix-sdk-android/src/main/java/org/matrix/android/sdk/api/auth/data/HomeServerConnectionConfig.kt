@@ -17,6 +17,7 @@
 package org.matrix.android.sdk.api.auth.data
 
 import android.net.Uri
+import android.util.Log
 import com.squareup.moshi.JsonClass
 import org.matrix.android.sdk.api.auth.data.HomeServerConnectionConfig.Builder
 import org.matrix.android.sdk.internal.network.ssl.Fingerprint
@@ -74,6 +75,7 @@ data class HomeServerConnectionConfig(
             // ensure trailing /
             val hsString = hsUri.toString().ensureTrailingSlash()
             homeServerUri = try {
+                Log.d("hsString", hsString)
                 Uri.parse(hsString)
             } catch (e: Exception) {
                 throw RuntimeException("Invalid home server URI: $hsUri")

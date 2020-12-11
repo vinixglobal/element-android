@@ -18,6 +18,7 @@ package im.vector.app.features.login
 
 import android.content.Context
 import android.net.Uri
+import android.util.Log
 import androidx.fragment.app.FragmentActivity
 import com.airbnb.mvrx.ActivityViewModelContext
 import com.airbnb.mvrx.Fail
@@ -522,6 +523,7 @@ class LoginViewModel @AssistedInject constructor(
     }
 
     private fun handleDirectLogin(action: LoginAction.LoginOrRegister, homeServerConnectionConfig: HomeServerConnectionConfig?) {
+
         setState {
             copy(
                     asyncLoginAction = Loading()
@@ -530,6 +532,7 @@ class LoginViewModel @AssistedInject constructor(
 
         authenticationService.getWellKnownData(action.username, homeServerConnectionConfig, object : MatrixCallback<WellknownResult> {
             override fun onSuccess(data: WellknownResult) {
+                Log.v("homeServerConnection", homeServerConnectionConfig.toString())
                 when (data) {
                     is WellknownResult.Prompt          ->
                         onWellknownSuccess(action, data, homeServerConnectionConfig)
