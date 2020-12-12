@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package im.vector.app.features.debug.sas
+package com.blast.vinix.features.debug.sas
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import im.vector.app.R
-import im.vector.app.core.extensions.cleanup
-import im.vector.app.core.extensions.configureWith
+import com.blast.vinix.R
+import com.blast.vinix.core.extensions.cleanup
+import com.blast.vinix.core.extensions.configureWith
 import org.matrix.android.sdk.api.crypto.getAllVerificationEmojis
 import kotlinx.android.synthetic.main.fragment_generic_recycler.*
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app.test.shared
+package com.blast.vinix.test.shared
 
 import net.lachlanmckee.timberjunit.TimberTestRule
 

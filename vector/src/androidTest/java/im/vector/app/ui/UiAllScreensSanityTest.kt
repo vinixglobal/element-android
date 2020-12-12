@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app.ui
+package com.blast.vinix.ui
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
@@ -43,21 +43,21 @@ import com.schibsted.spain.barista.interaction.BaristaListInteractions.clickList
 import com.schibsted.spain.barista.interaction.BaristaListInteractions.clickListItemChild
 import com.schibsted.spain.barista.interaction.BaristaMenuClickInteractions.clickMenu
 import com.schibsted.spain.barista.interaction.BaristaMenuClickInteractions.openMenu
-import im.vector.app.EspressoHelper
-import im.vector.app.R
-import im.vector.app.SleepViewAction
-import im.vector.app.activityIdlingResource
-import im.vector.app.espresso.tools.clickOnPreference
-import im.vector.app.espresso.tools.waitUntilActivityVisible
-import im.vector.app.features.MainActivity
-import im.vector.app.features.createdirect.CreateDirectRoomActivity
-import im.vector.app.features.home.HomeActivity
-import im.vector.app.features.home.room.detail.RoomDetailActivity
-import im.vector.app.features.login.LoginActivity
-import im.vector.app.features.roomdirectory.RoomDirectoryActivity
-import im.vector.app.initialSyncIdlingResource
-import im.vector.app.waitForView
-import im.vector.app.withIdlingResource
+import com.blast.vinix.EspressoHelper
+import com.blast.vinix.R
+import com.blast.vinix.SleepViewAction
+import com.blast.vinix.activityIdlingResource
+import com.blast.vinix.espresso.tools.clickOnPreference
+import com.blast.vinix.espresso.tools.waitUntilActivityVisible
+import com.blast.vinix.features.MainActivity
+import com.blast.vinix.features.createdirect.CreateDirectRoomActivity
+import com.blast.vinix.features.home.HomeActivity
+import com.blast.vinix.features.home.room.detail.RoomDetailActivity
+import com.blast.vinix.features.login.LoginActivity
+import com.blast.vinix.features.roomdirectory.RoomDirectoryActivity
+import com.blast.vinix.initialSyncIdlingResource
+import com.blast.vinix.waitForView
+import com.blast.vinix.withIdlingResource
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

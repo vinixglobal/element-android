@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package im.vector.app
+package com.blast.vinix
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
-import im.vector.app.test.shared.createTimberTestRule
+import com.blast.vinix.test.shared.createTimberTestRule
 import org.junit.Rule
 
 interface InstrumentedTest {

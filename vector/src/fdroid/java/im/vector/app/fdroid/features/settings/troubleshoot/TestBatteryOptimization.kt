@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package im.vector.app.fdroid.features.settings.troubleshoot
+package com.blast.vinix.fdroid.features.settings.troubleshoot
 
 import android.content.Intent
 import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.app.AppCompatActivity
-import im.vector.app.R
-import im.vector.app.core.resources.StringProvider
-import im.vector.app.core.utils.isIgnoringBatteryOptimizations
-import im.vector.app.core.utils.requestDisablingBatteryOptimization
-import im.vector.app.features.settings.troubleshoot.TroubleshootTest
+import com.blast.vinix.R
+import com.blast.vinix.core.resources.StringProvider
+import com.blast.vinix.core.utils.isIgnoringBatteryOptimizations
+import com.blast.vinix.core.utils.requestDisablingBatteryOptimization
+import com.blast.vinix.features.settings.troubleshoot.TroubleshootTest
 import javax.inject.Inject
 
 class TestBatteryOptimization @Inject constructor(

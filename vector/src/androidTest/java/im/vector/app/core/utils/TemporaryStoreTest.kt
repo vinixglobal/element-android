@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app.core.utils
+package com.blast.vinix.core.utils
 
 import org.amshove.kluent.shouldBe
 import org.junit.Test

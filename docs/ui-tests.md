@@ -69,7 +69,7 @@ To run all the tests from the `vector` module.
 In case of trouble, you can try to uninstall the previous installed test APK first with this command:
 
 ```shell script
-adb uninstall im.vector.app.debug.test
+adb uninstall com.blast.vinix.debug.test
 ```
 ## Recipes
 

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package im.vector.app.features.home.room.detail.composer.rainbow
+package com.blast.vinix.features.home.room.detail.composer.rainbow
 
-import im.vector.app.test.trimIndentOneLine
+import com.blast.vinix.test.trimIndentOneLine
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

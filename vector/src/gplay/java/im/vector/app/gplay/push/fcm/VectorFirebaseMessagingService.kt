@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-package im.vector.app.gplay.push.fcm
+package com.blast.vinix.gplay.push.fcm
 
 import android.content.Intent
 import android.os.Handler
@@ -27,19 +27,19 @@ import androidx.lifecycle.ProcessLifecycleOwner
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import im.vector.app.BuildConfig
-import im.vector.app.R
-import im.vector.app.core.di.ActiveSessionHolder
-import im.vector.app.core.extensions.vectorComponent
-import im.vector.app.core.pushers.PushersManager
-import im.vector.app.features.badge.BadgeProxy
-import im.vector.app.features.notifications.NotifiableEventResolver
-import im.vector.app.features.notifications.NotifiableMessageEvent
-import im.vector.app.features.notifications.NotificationDrawerManager
-import im.vector.app.features.notifications.NotificationUtils
-import im.vector.app.features.notifications.SimpleNotifiableEvent
-import im.vector.app.features.settings.VectorPreferences
-import im.vector.app.push.fcm.FcmHelper
+import com.blast.vinix.BuildConfig
+import com.blast.vinix.R
+import com.blast.vinix.core.di.ActiveSessionHolder
+import com.blast.vinix.core.extensions.vectorComponent
+import com.blast.vinix.core.pushers.PushersManager
+import com.blast.vinix.features.badge.BadgeProxy
+import com.blast.vinix.features.notifications.NotifiableEventResolver
+import com.blast.vinix.features.notifications.NotifiableMessageEvent
+import com.blast.vinix.features.notifications.NotificationDrawerManager
+import com.blast.vinix.features.notifications.NotificationUtils
+import com.blast.vinix.features.notifications.SimpleNotifiableEvent
+import com.blast.vinix.features.settings.VectorPreferences
+import com.blast.vinix.push.fcm.FcmHelper
 import org.matrix.android.sdk.api.pushrules.Action
 import org.matrix.android.sdk.api.session.Session
 import org.matrix.android.sdk.api.session.events.model.Event

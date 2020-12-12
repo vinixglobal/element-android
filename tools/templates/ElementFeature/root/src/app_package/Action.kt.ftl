@@ -1,5 +1,5 @@
 package ${escapeKotlinIdentifiers(packageName)}
 
-import im.vector.app.core.platform.VectorViewModelAction
+import com.blast.vinix.core.platform.VectorViewModelAction
 
 sealed class ${actionClass}: VectorViewModelAction

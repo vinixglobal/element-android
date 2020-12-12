@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package im.vector.app.fdroid.receiver
+package com.blast.vinix.fdroid.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import im.vector.app.core.di.HasVectorInjector
-import im.vector.app.core.extensions.vectorComponent
-import im.vector.app.fdroid.BackgroundSyncStarter
+import com.blast.vinix.core.di.HasVectorInjector
+import com.blast.vinix.core.extensions.vectorComponent
+import com.blast.vinix.fdroid.BackgroundSyncStarter
 import timber.log.Timber
 
 class OnApplicationUpgradeOrRebootReceiver : BroadcastReceiver() {

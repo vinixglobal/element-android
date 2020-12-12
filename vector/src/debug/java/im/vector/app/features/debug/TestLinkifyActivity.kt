@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app.features.debug
+package com.blast.vinix.features.debug
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -25,7 +25,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import butterknife.BindView
 import butterknife.ButterKnife
-import im.vector.app.R
+import com.blast.vinix.R
 
 class TestLinkifyActivity : AppCompatActivity() {
 

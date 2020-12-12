@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package im.vector.app.fdroid
+package com.blast.vinix.fdroid
 
 import android.content.Context
-import im.vector.app.core.di.ActiveSessionHolder
-import im.vector.app.fdroid.receiver.AlarmSyncBroadcastReceiver
-import im.vector.app.features.settings.BackgroundSyncMode
-import im.vector.app.features.settings.VectorPreferences
+import com.blast.vinix.core.di.ActiveSessionHolder
+import com.blast.vinix.fdroid.receiver.AlarmSyncBroadcastReceiver
+import com.blast.vinix.features.settings.BackgroundSyncMode
+import com.blast.vinix.features.settings.VectorPreferences
 import timber.log.Timber
 
 object BackgroundSyncStarter {

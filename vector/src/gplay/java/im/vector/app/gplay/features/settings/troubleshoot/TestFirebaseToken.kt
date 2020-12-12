@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package im.vector.app.gplay.features.settings.troubleshoot
+package com.blast.vinix.gplay.features.settings.troubleshoot
 
 import android.content.Intent
 import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.messaging.FirebaseMessaging
-import im.vector.app.R
-import im.vector.app.core.resources.StringProvider
-import im.vector.app.core.utils.startAddGoogleAccountIntent
-import im.vector.app.features.settings.troubleshoot.TroubleshootTest
-import im.vector.app.push.fcm.FcmHelper
+import com.blast.vinix.R
+import com.blast.vinix.core.resources.StringProvider
+import com.blast.vinix.core.utils.startAddGoogleAccountIntent
+import com.blast.vinix.features.settings.troubleshoot.TroubleshootTest
+import com.blast.vinix.push.fcm.FcmHelper
 import timber.log.Timber
 import javax.inject.Inject
 

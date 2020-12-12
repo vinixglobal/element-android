@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package im.vector.app.push.fcm
+package com.blast.vinix.push.fcm
 
 import androidx.fragment.app.Fragment
-import im.vector.app.features.settings.troubleshoot.NotificationTroubleshootTestManager
-import im.vector.app.features.settings.troubleshoot.TestAccountSettings
-import im.vector.app.features.settings.troubleshoot.TestDeviceSettings
-import im.vector.app.features.settings.troubleshoot.TestNotification
-import im.vector.app.features.settings.troubleshoot.TestPushRulesSettings
-import im.vector.app.features.settings.troubleshoot.TestSystemSettings
-import im.vector.app.gplay.features.settings.troubleshoot.TestFirebaseToken
-import im.vector.app.gplay.features.settings.troubleshoot.TestPlayServices
-import im.vector.app.gplay.features.settings.troubleshoot.TestPushFromPushGateway
-import im.vector.app.gplay.features.settings.troubleshoot.TestTokenRegistration
+import com.blast.vinix.features.settings.troubleshoot.NotificationTroubleshootTestManager
+import com.blast.vinix.features.settings.troubleshoot.TestAccountSettings
+import com.blast.vinix.features.settings.troubleshoot.TestDeviceSettings
+import com.blast.vinix.features.settings.troubleshoot.TestNotification
+import com.blast.vinix.features.settings.troubleshoot.TestPushRulesSettings
+import com.blast.vinix.features.settings.troubleshoot.TestSystemSettings
+import com.blast.vinix.gplay.features.settings.troubleshoot.TestFirebaseToken
+import com.blast.vinix.gplay.features.settings.troubleshoot.TestPlayServices
+import com.blast.vinix.gplay.features.settings.troubleshoot.TestPushFromPushGateway
+import com.blast.vinix.gplay.features.settings.troubleshoot.TestTokenRegistration
 import javax.inject.Inject
 
 class NotificationTroubleshootTestManagerFactory @Inject constructor(

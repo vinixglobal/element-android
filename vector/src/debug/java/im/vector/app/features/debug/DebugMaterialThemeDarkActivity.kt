@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-package im.vector.app.features.debug
+package com.blast.vinix.features.debug
 
 class DebugMaterialThemeDarkActivity : DebugMaterialThemeActivity()

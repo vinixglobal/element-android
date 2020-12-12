@@ -6,12 +6,12 @@ import com.airbnb.mvrx.MvRxViewModelFactory
 import com.airbnb.mvrx.ViewModelContext
 import com.squareup.inject.assisted.Assisted
 import com.squareup.inject.assisted.AssistedInject
-import im.vector.app.core.extensions.exhaustive
-import im.vector.app.core.platform.VectorViewModel
+import com.blast.vinix.core.extensions.exhaustive
+import com.blast.vinix.core.platform.VectorViewModel
 
 <#if createViewEvents>
 <#else>
-import im.vector.app.core.platform.EmptyViewEvents
+import com.blast.vinix.core.platform.EmptyViewEvents
 </#if>
 
 class ${viewModelClass} @AssistedInject constructor(@Assisted initialState: ${viewStateClass})

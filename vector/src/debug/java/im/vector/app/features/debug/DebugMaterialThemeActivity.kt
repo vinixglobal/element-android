@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app.features.debug
+package com.blast.vinix.features.debug
 
 import android.os.Bundle
 import android.view.Menu
@@ -22,8 +22,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.snackbar.Snackbar
-import im.vector.app.R
-import im.vector.app.core.utils.toast
+import com.blast.vinix.R
+import com.blast.vinix.core.utils.toast
 import kotlinx.android.synthetic.debug.activity_test_material_theme.*
 
 // Rendering is not the same with VectorBaseActivity

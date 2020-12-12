@@ -162,7 +162,7 @@
         app:layout_constraintVertical_bias="1"
         tools:ignore="MissingPrefix" />
 
-    <im.vector.app.features.home.room.detail.composer.ComposerEditText
+    <com.blast.vinix.features.home.room.detail.composer.ComposerEditText
         android:id="@+id/composerEditText"
         style="@style/ComposerEditTextStyle"
         android:layout_width="0dp"

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package im.vector.app.espresso.tools
+package com.blast.vinix.espresso.tools
 
 import android.app.Activity
-import im.vector.app.activityIdlingResource
-import im.vector.app.withIdlingResource
+import com.blast.vinix.activityIdlingResource
+import com.blast.vinix.withIdlingResource
 
 inline fun <reified T : Activity> waitUntilActivityVisible(noinline block: (() -> Unit)) {
     withIdlingResource(activityIdlingResource(T::class.java), block)

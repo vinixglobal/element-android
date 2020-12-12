@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app.features.debug
+package com.blast.vinix.features.debug
 
 import android.app.Activity
 import android.app.NotificationChannel
@@ -25,18 +25,18 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.Person
 import androidx.core.content.getSystemService
 import butterknife.OnClick
-import im.vector.app.R
-import im.vector.app.core.di.ActiveSessionHolder
-import im.vector.app.core.di.ScreenComponent
-import im.vector.app.core.extensions.registerStartForActivityResult
-import im.vector.app.core.platform.VectorBaseActivity
-import im.vector.app.core.utils.PERMISSIONS_FOR_TAKING_PHOTO
-import im.vector.app.core.utils.PERMISSION_REQUEST_CODE_LAUNCH_CAMERA
-import im.vector.app.core.utils.allGranted
-import im.vector.app.core.utils.checkPermissions
-import im.vector.app.core.utils.toast
-import im.vector.app.features.debug.sas.DebugSasEmojiActivity
-import im.vector.app.features.qrcode.QrCodeScannerActivity
+import com.blast.vinix.R
+import com.blast.vinix.core.di.ActiveSessionHolder
+import com.blast.vinix.core.di.ScreenComponent
+import com.blast.vinix.core.extensions.registerStartForActivityResult
+import com.blast.vinix.core.platform.VectorBaseActivity
+import com.blast.vinix.core.utils.PERMISSIONS_FOR_TAKING_PHOTO
+import com.blast.vinix.core.utils.PERMISSION_REQUEST_CODE_LAUNCH_CAMERA
+import com.blast.vinix.core.utils.allGranted
+import com.blast.vinix.core.utils.checkPermissions
+import com.blast.vinix.core.utils.toast
+import com.blast.vinix.features.debug.sas.DebugSasEmojiActivity
+import com.blast.vinix.features.qrcode.QrCodeScannerActivity
 import org.matrix.android.sdk.internal.crypto.verification.qrcode.toQrCodeData
 import kotlinx.android.synthetic.debug.activity_debug_menu.*
 import timber.log.Timber

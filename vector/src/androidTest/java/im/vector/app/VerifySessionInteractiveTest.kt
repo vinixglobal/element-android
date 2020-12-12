@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app
+package com.blast.vinix
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
@@ -34,8 +34,8 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import androidx.test.platform.app.InstrumentationRegistry
-import im.vector.app.features.MainActivity
-import im.vector.app.features.home.HomeActivity
+import com.blast.vinix.features.MainActivity
+import com.blast.vinix.features.home.HomeActivity
 import org.hamcrest.CoreMatchers.not
 import org.junit.Before
 import org.junit.Rule

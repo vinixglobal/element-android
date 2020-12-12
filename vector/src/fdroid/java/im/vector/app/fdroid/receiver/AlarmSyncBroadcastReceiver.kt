@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app.fdroid.receiver
+package com.blast.vinix.fdroid.receiver
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -24,9 +24,9 @@ import android.content.Intent
 import android.os.Build
 import androidx.core.content.ContextCompat
 import androidx.core.content.getSystemService
-import im.vector.app.core.di.HasVectorInjector
-import im.vector.app.core.services.VectorSyncService
-import im.vector.app.features.settings.VectorPreferences
+import com.blast.vinix.core.di.HasVectorInjector
+import com.blast.vinix.core.services.VectorSyncService
+import com.blast.vinix.features.settings.VectorPreferences
 import org.matrix.android.sdk.internal.session.sync.job.SyncService
 import timber.log.Timber
 

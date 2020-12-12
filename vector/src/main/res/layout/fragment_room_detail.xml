@@ -88,7 +88,7 @@
         app:barrierDirection="top"
         app:constraint_referenced_ids="composerLayout,notificationAreaView" />
 
-    <im.vector.app.features.sync.widget.SyncStateView
+    <com.blast.vinix.features.sync.widget.SyncStateView
         android:id="@+id/syncStateView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/roomToolbar" />
 
-    <im.vector.app.core.ui.views.ActiveCallView
+    <com.blast.vinix.core.ui.views.ActiveCallView
         android:id="@+id/activeCallView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
         app:layout_constraintTop_toBottomOf="@id/syncStateView"
         tools:visibility="visible" />
 
-    <im.vector.app.core.ui.views.ActiveConferenceView
+    <com.blast.vinix.core.ui.views.ActiveConferenceView
         android:id="@+id/activeConferenceView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/activeConferenceView">
 
-        <!--        <im.vector.app.features.home.room.detail.widget.RoomWidgetsBannerView-->
+        <!--        <com.blast.vinix.features.home.room.detail.widget.RoomWidgetsBannerView-->
         <!--            android:id="@+id/roomWidgetsBannerView"-->
         <!--            android:layout_width="match_parent"-->
         <!--            android:layout_height="wrap_content"-->
@@ -141,7 +141,7 @@
         <!--            android:visibility="gone"-->
         <!--            tools:visibility="visible" />-->
 
-        <im.vector.app.core.ui.views.JumpToReadMarkerView
+        <com.blast.vinix.core.ui.views.JumpToReadMarkerView
             android:id="@+id/jumpToReadMarkerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
 
     </FrameLayout>
 
-    <im.vector.app.core.ui.views.NotificationAreaView
+    <com.blast.vinix.core.ui.views.NotificationAreaView
         android:id="@+id/notificationAreaView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <im.vector.app.features.home.room.detail.composer.TextComposerView
+    <com.blast.vinix.features.home.room.detail.composer.TextComposerView
         android:id="@+id/composerLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <im.vector.app.features.invite.VectorInviteView
+    <com.blast.vinix.features.invite.VectorInviteView
         android:id="@+id/inviteView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -208,7 +208,7 @@
             tools:visibility="visible" />
     </androidx.cardview.widget.CardView>
 
-    <im.vector.app.core.platform.BadgeFloatingActionButton
+    <com.blast.vinix.core.platform.BadgeFloatingActionButton
         android:id="@+id/jumpToBottomView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

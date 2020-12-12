@@ -3,10 +3,10 @@ package ${escapeKotlinIdentifiers(packageName)}
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.widget.Toolbar
-import im.vector.app.R
-import im.vector.app.core.extensions.addFragment
-import im.vector.app.core.platform.ToolbarConfigurable
-import im.vector.app.core.platform.VectorBaseActivity
+import com.blast.vinix.R
+import com.blast.vinix.core.extensions.addFragment
+import com.blast.vinix.core.platform.ToolbarConfigurable
+import com.blast.vinix.core.platform.VectorBaseActivity
 
 //TODO: add this activity to manifest
 class ${activityClass} : VectorBaseActivity(), ToolbarConfigurable {

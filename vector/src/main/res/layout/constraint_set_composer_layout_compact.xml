@@ -159,7 +159,7 @@
         app:layout_constraintStart_toEndOf="@id/attachmentButton"
         tools:ignore="MissingPrefix" />
 
-    <im.vector.app.features.home.room.detail.composer.ComposerEditText
+    <com.blast.vinix.features.home.room.detail.composer.ComposerEditText
         android:id="@+id/composerEditText"
         style="@style/ComposerEditTextStyle"
         android:layout_width="0dp"

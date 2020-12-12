@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package im.vector.app
+package com.blast.vinix
 
 import androidx.annotation.CallSuper
 import junit.framework.TestCase.fail

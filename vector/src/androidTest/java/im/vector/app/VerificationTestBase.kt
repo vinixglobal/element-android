@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package im.vector.app
+package com.blast.vinix
 
 import android.net.Uri
 import androidx.lifecycle.Observer
-import im.vector.app.ui.UiTestBase
+import com.blast.vinix.ui.UiTestBase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

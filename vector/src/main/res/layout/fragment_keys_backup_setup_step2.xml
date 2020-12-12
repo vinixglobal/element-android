@@ -82,7 +82,7 @@
             app:tint="?attr/colorAccent"
             tools:ignore="MissingPrefix" />
 
-        <im.vector.app.core.ui.views.PasswordStrengthBar
+        <com.blast.vinix.core.ui.views.PasswordStrengthBar
             android:id="@+id/keys_backup_passphrase_security_progress"
             android:layout_width="0dp"
             android:layout_height="4dp"

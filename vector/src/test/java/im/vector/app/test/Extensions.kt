@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-package im.vector.app.test
+package com.blast.vinix.test
 
 fun String.trimIndentOneLine() = trimIndent().replace("\n", "")

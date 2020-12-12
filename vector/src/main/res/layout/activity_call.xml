@@ -112,7 +112,7 @@
         app:constraint_referenced_ids="pip_video_view, fullscreen_video_view"
         tools:visibility="invisible" />
 
-    <im.vector.app.features.call.CallControlsView
+    <com.blast.vinix.features.call.CallControlsView
         android:id="@+id/callControls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
