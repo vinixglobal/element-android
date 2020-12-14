@@ -36,8 +36,12 @@ Come chat with the community in the dedicated Matrix [room](https://matrix.to/#/
 
 # Android App Bundle Config
 MYAPP_UPLOAD_STORE_FILE=my-upload-key.keystore
+
 MYAPP_UPLOAD_KEY_ALIAS=my-android-key
+
 MYAPP_UPLOAD_STORE_PASSWORD=$Vinix123
+
 MYAPP_UPLOAD_KEY_PASSWORD=$Vinix123
+
 
 Key: https://drive.google.com/file/d/1Fkn6kPHNLpHX4gO8lgWe7mlaxztg3wcZ/view?usp=sharing
