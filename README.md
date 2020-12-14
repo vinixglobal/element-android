@@ -32,3 +32,12 @@ The team will work to add them on a regular basis.
 Please refer to [CONTRIBUTING.md](https://github.com/vector-im/element-android/blob/develop/CONTRIBUTING.md) if you want to contribute on Matrix Android projects!
 
 Come chat with the community in the dedicated Matrix [room](https://matrix.to/#/#element-android:matrix.org).
+
+
+# Android App Bundle Config
+MYAPP_UPLOAD_STORE_FILE=my-upload-key.keystore
+MYAPP_UPLOAD_KEY_ALIAS=my-android-key
+MYAPP_UPLOAD_STORE_PASSWORD=$Vinix123
+MYAPP_UPLOAD_KEY_PASSWORD=$Vinix123
+
+Key: https://drive.google.com/file/d/1Fkn6kPHNLpHX4gO8lgWe7mlaxztg3wcZ/view?usp=sharing
