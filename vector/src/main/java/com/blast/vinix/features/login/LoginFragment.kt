@@ -144,7 +144,7 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
         if (state.signMode == SignMode.SignInWithMatrixId) {
             loginServerIcon.isVisible = false
             loginTitle.text = getString(R.string.login_signin_matrix_id_title)
-            loginNotice.text = getString(R.string.login_signin_matrix_id_notice)
+            //loginNotice.text = getString(R.string.login_signin_matrix_id_notice)
             loginPasswordNotice.isVisible = true
         } else {
             val resId = when (state.signMode) {
