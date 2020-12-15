@@ -18,9 +18,9 @@ package com.blast.vinix.features.settings
 
 object VectorSettingsUrls {
 
-    const val COPYRIGHT = "https://element.io/copyright"
-    const val TAC = "https://element.io/terms-of-service"
-    const val PRIVACY_POLICY = "https://element.io/privacy"
-    const val DISCLAIMER_URL = "https://element.io/previously-riot"
+    const val COPYRIGHT = "https://www.vinixglobal.com"
+    const val TAC = "https://www.vinixglobal.com"
+    const val PRIVACY_POLICY = "https://www.vinixglobal.com/legal"
+    const val DISCLAIMER_URL = "https://www.vinixglobal.com"
     const val THIRD_PARTY_LICENSES = "file:///android_asset/open_source_licenses.html"
 }
