@@ -566,11 +566,11 @@
     <string name="people_search_invite_by_id"><u>Invite by ID</u></string>
     <string name="people_search_local_contacts">LOCAL CONTACTS (%d)</string>
     <string name="people_search_user_directory">USER DIRECTORY (%s)</string>
-    <string name="people_search_filter_text">Matrix users only</string>
+    <string name="people_search_filter_text">Vinix Blast users only</string>
 
     <string name="people_search_invite_by_id_dialog_title">Invite user by ID</string>
-    <string name="people_search_invite_by_id_dialog_description">Please enter one or more email address or Matrix ID</string>
-    <string name="people_search_invite_by_id_dialog_hint">Email or Matrix ID</string>
+    <string name="people_search_invite_by_id_dialog_description">Please enter Vinix Blast ID</string>
+    <string name="people_search_invite_by_id_dialog_hint">Vinix Blast ID</string>
 
     <!--  Chat -->
     <string name="room_menu_search">Search</string>
@@ -617,7 +617,7 @@
         <item quantity="one">%d selected</item>
         <item quantity="other">%d selected</item>
     </plurals>
-    <string name="malformed_id">Malformed ID. Should be an email address or a Matrix ID like \'@localpart:domain\'</string>
+    <string name="malformed_id">Malformed ID. Should be a Vinix Blast ID like \'@localpart:domain\'</string>
     <string name="room_details_people_invited_group_name">INVITED</string>
     <string name="room_details_people_present_group_name">JOINED</string>
 
@@ -1794,7 +1794,7 @@
     <string name="room_filtering_footer_create_new_direct_message">Send a new direct message</string>
     <string name="room_filtering_footer_open_room_directory">View the room directory</string>
 
-    <string name="room_directory_search_hint">Name or ID (#example:matrix.org)</string>
+    <string name="room_directory_search_hint">Name or ID (#example:vinix.im)</string>
     <string name="user_directory_search_hint">Search by name or ID</string>
 
     <string name="labs_swipe_to_reply_in_timeline">Enable swipe to reply in timeline</string>
@@ -1802,11 +1802,11 @@
 
     <string name="link_copied_to_clipboard">Link copied to clipboard</string>
 
-    <string name="add_by_matrix_id">Add by matrix ID</string>
+    <string name="add_by_matrix_id">Add by Vinix Blast ID</string>
     <string name="add_by_qr_code">Add by QR code</string>
     <string name="qr_code">QR code</string>
     <string name="creating_direct_room">"Creating room…"</string>
-    <string name="direct_room_no_known_users">"No result found, use Add by matrix ID to search on server."</string>
+    <string name="direct_room_no_known_users">"No result found, use Add by Vinix Blast ID to search on server."</string>
     <string name="direct_room_start_search">"Start typing to get results"</string>
     <string name="direct_room_filter_hint">"Filter by username or ID…"</string>
     <string name="direct_room_user_list_recent_title">Recent</string>
@@ -1876,7 +1876,7 @@
     <string name="a11y_create_menu_open">Open the create room menu</string>
     <string name="a11y_create_menu_close">Close the create room menu…</string>
     <string name="a11y_create_direct_message">Create a new direct conversation</string>
-    <string name="a11y_create_direct_message_by_mxid">Create a new direct conversation by Matrix ID</string>
+    <string name="a11y_create_direct_message_by_mxid">Create a new direct conversation by Vinix Blast ID</string>
     <string name="a11y_create_direct_message_by_qr_code">Create a new direct conversation by scanning a QR code</string>
     <string name="a11y_create_room">Create a new room</string>
     <string name="a11y_close_keys_backup_banner">Close keys backup banner</string>
@@ -2088,10 +2088,10 @@
     </plurals>
 
     <string name="login_connect_using_matrix_id_notice">Alternatively, if you already have an account and you know your Matrix identifier and your password, you can use this method:</string>
-    <string name="login_connect_using_matrix_id_submit">Sign in with Matrix ID</string>
-    <string name="login_signin_matrix_id_title">Sign in with Matrix ID</string>
+    <string name="login_connect_using_matrix_id_submit">Sign in with Vinix Blast ID</string>
+    <string name="login_signin_matrix_id_title">Sign in with Vinix Blast ID</string>
     <string name="login_signin_matrix_id_notice">If you set up an account on a homeserver, use your Matrix ID (e.g. @user:domain.com) and password below.</string>
-    <string name="login_signin_matrix_id_hint">Matrix ID</string>
+    <string name="login_signin_matrix_id_hint">Vinix Blast ID</string>
     <string name="login_signin_matrix_id_password_notice">If you don’t know your password, go back to reset it.</string>
     <string name="login_signin_matrix_id_error_invalid_matrix_id">This is not a valid user identifier. Expected format: \'@user:homeserver.org\'</string>
     <string name="autodiscover_well_known_error">Unable to find a valid homeserver. Please check your identifier</string>
