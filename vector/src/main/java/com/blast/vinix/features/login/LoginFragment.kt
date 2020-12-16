@@ -136,6 +136,7 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
         loginSubmit.hideKeyboard()
         loginFieldTil.error = null
         passwordFieldTil.error = null
+        loginHomeserverTil.error = null
     }
 
     private fun setupUi(state: LoginViewState) {
