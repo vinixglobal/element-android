@@ -122,6 +122,11 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
             error++
         }
 
+        if (homeserver.isEmpty()) {
+            loginHomeserverTil.error = getString(R.string.error_empty_field_homeserver)
+            error++
+        }
+
         if (error == 0) {
             loginViewModel.handle(LoginAction.LoginOrRegister(login, password, getString(R.string.login_default_session_public_name)))
         }
