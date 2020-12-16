@@ -100,7 +100,6 @@
                     tools:ignore="MissingPrefix" />
 
             </FrameLayout>
-
             <TextView
                 android:id="@+id/loginPasswordNotice"
                 android:layout_width="wrap_content"
@@ -110,6 +109,27 @@
                 android:textAppearance="@style/TextAppearance.Vector.Login.Text.Small"
                 android:visibility="gone"
                 tools:visibility="visible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/loginHomeserverTil"
+                style="@style/VectorTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:errorEnabled="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/loginHomeserver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text="@string/login_homeserver_url"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
 
             <FrameLayout
                 android:layout_width="match_parent"

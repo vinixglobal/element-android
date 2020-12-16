@@ -101,8 +101,9 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
 
 
         var login = loginField.text.toString()
+        var homeserver = loginHomeserver.text.toString()
         if (!(login.contains("@", ignoreCase = true) && login.contains(":", ignoreCase = true))) {
-            login = "@" + login + ":vinix.im"
+            login = "@" + login + ":" + homeserver
         }
         val password = passwordField.text.toString()
 
@@ -171,6 +172,7 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
                     loginServerIcon.isVisible = false
                     loginTitle.text = getString(resId, state.homeServerUrl.toReducedUrl())
                     loginNotice.text = getString(R.string.login_server_other_text)
+                    loginHomeserver.setText(getString(R.string.login_homeserver_url))
                 }
                 ServerType.Unknown   -> Unit /* Should not happen */
             }

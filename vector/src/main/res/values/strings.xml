@@ -2062,6 +2062,8 @@
     <!-- Replaced string is the homeserver url -->
     <string name="login_signup_to">Sign up to %1$s</string>
     <string name="login_signin_username_hint">Username or email</string>
+    <string name="login_homeserver_text">Homeserver URL</string>
+    <string name="login_homeserver_url">vinix.im</string>
     <string name="login_signup_username_hint">Username</string>
     <string name="login_signup_password_hint">Password</string>
     <string name="login_signup_submit">Next</string>
