@@ -106,6 +106,11 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
 
         var login = loginField.text.toString()
         var homeserver = loginHomeserver.text.toString()
+        if(homeserver.startsWith("http://")) {
+            homeserver = homeserver.substring(7)
+        }else if(homeserver.startsWith("https://"))    {
+            homeserver = homeserver.substring(8)
+        }
         if(!homeserver.equals(R.string.matrix_org_server_url)){
             //save url in preferences
             ServerUrlsRepository.saveHomeserverUrl(requireContext(), homeserver)
