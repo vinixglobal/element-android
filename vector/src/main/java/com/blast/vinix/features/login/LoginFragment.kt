@@ -111,10 +111,6 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
         }else if(homeserver.startsWith("https://"))    {
             homeserver = homeserver.substring(8)
         }
-        if(!homeserver.equals(R.string.matrix_org_server_url)){
-            //save url in preferences
-            ServerUrlsRepository.saveHomeserverUrl(requireContext(), homeserver)
-        }
 
         if (!(login.contains("@", ignoreCase = true) && login.contains(":", ignoreCase = true))) {
             login = "@" + login + ":" + homeserver
@@ -142,6 +138,10 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
         }
 
         if (error == 0) {
+            if(!homeserver.equals(R.string.matrix_org_server_url)){
+                //save url in preferences
+                ServerUrlsRepository.saveHomeserverUrl(requireContext(), homeserver)
+            }
             loginViewModel.handle(LoginAction.LoginOrRegister(login, password, getString(R.string.login_default_session_public_name)))
         }
     }
