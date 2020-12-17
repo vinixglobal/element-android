@@ -16,6 +16,7 @@
 
 package com.blast.vinix.features.login
 
+import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -34,6 +35,7 @@ import com.blast.vinix.core.extensions.exhaustive
 import com.blast.vinix.core.extensions.hideKeyboard
 import com.blast.vinix.core.extensions.showPassword
 import com.blast.vinix.core.extensions.toReducedUrl
+import com.blast.vinix.features.homeserver.ServerUrlsRepository
 import io.reactivex.Observable
 import io.reactivex.functions.BiFunction
 import io.reactivex.rxkotlin.subscribeBy
@@ -42,6 +44,7 @@ import org.matrix.android.sdk.api.failure.Failure
 import org.matrix.android.sdk.api.failure.MatrixError
 import org.matrix.android.sdk.api.failure.isInvalidPassword
 import javax.inject.Inject
+
 
 /**
  * In this screen:
@@ -102,6 +105,11 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
 
         var login = loginField.text.toString()
         var homeserver = loginHomeserver.text.toString()
+        if(!homeserver.equals(R.string.matrix_org_server_url)){
+            //save url in preferences
+            ServerUrlsRepository.saveUrl(requireContext(), homeserver)
+        }
+
         if (!(login.contains("@", ignoreCase = true) && login.contains(":", ignoreCase = true))) {
             login = "@" + login + ":" + homeserver
         }
@@ -178,7 +186,10 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
                     loginServerIcon.isVisible = false
                     loginTitle.text = getString(resId, state.homeServerUrl.toReducedUrl())
                     loginNotice.text = getString(R.string.login_server_other_text)
+                    //val defaultHomeServer = ServerUrlsRepository.getLastHomeServerUrl(requireContext())
+                    //loginHomeserver.setText()
                     loginHomeserver.setText(getString(R.string.login_homeserver_url))
+
                 }
                 ServerType.Unknown   -> Unit /* Should not happen */
             }

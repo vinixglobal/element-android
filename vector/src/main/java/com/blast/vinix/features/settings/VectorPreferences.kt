@@ -186,6 +186,8 @@ class VectorPreferences @Inject constructor(private val context: Context) {
         private const val MEDIA_SAVING_FOREVER = 3
 
         private const val SETTINGS_UNKNOWN_DEVICE_DISMISSED_LIST = "SETTINGS_UNKNWON_DEVICE_DISMISSED_LIST"
+        //custom VINIX BLAST values
+        private const val SETTINGS_DEFAULT_HOMESERVER_URL = "SETTINGS_DEFAULT_HOMESERVER_URL"
 
         // Background sync modes
 
