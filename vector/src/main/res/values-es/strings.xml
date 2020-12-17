@@ -293,8 +293,8 @@ Por favor permite el acceso en la próxima ventana emergente para descubrir usua
     <string name="people_search_local_contacts">CONTACTOS LOCALES (%d)</string>
     <string name="people_search_filter_text">Solo usuarios de Matrix</string>
     <string name="people_search_invite_by_id_dialog_title">Invitar usuario por ID</string>
-    <string name="people_search_invite_by_id_dialog_description">Por favor, ingresa una o más direcciones de correo electrónico o ID de Matrix</string>
-    <string name="people_search_invite_by_id_dialog_hint">Correo electrónico o ID de Matrix</string>
+    <string name="people_search_invite_by_id_dialog_description">Por favor ingrese su Vinix Blast ID</string>
+    <string name="people_search_invite_by_id_dialog_hint">Vinix Blast ID</string>
     <!--  Chat -->
     <string name="room_menu_search">Buscar</string>
     <string name="room_one_user_is_typing">%s está escribiendo…</string>
@@ -328,7 +328,7 @@ Por favor permite el acceso en la próxima ventana emergente para descubrir usua
     <string name="room_details_people">Personas</string>
     <string name="room_details_files">Archivos</string>
     <string name="room_details_settings">Ajustes</string>
-    <string name="malformed_id">ID mal formada. Debería ser una dirección de correo electrónico o una ID de Matrix como \'@partelocal:dominio\'</string>
+    <string name="malformed_id">ID mal formado. Debería ser su Vinix Blast ID</string>
     <string name="room_details_people_invited_group_name">INVITADOS</string>
     <string name="room_details_people_present_group_name">SE UNIERON</string>
     <!-- Room events -->
@@ -1379,9 +1379,9 @@ Por favor permite el acceso en la próxima ventana emergente para descubrir usua
     <string name="room_directory_search_hint">Nombre o ID (#ejemplo:servidor.org)</string>
     <string name="labs_swipe_to_reply_in_timeline">Habilitar \"desplazar para contestar\" en la línea de tiempo</string>
     <string name="link_copied_to_clipboard">Enlace copiado al portapapeles</string>
-    <string name="add_by_matrix_id">Agregar por ID de matrix</string>
+    <string name="add_by_matrix_id">Agregar por ID de Vinix Blast</string>
     <string name="creating_direct_room">Creando sala…</string>
-    <string name="direct_room_no_known_users">No se ha encontrado ningún resultado, utiliza \"Agregar usando ID de matrix\" para buscar en el servidor.</string>
+    <string name="direct_room_no_known_users">No se ha encontrado ningún resultado, utiliza \"Agregar usando ID de Vinix Blast o Matrix\" para buscar en el servidor.</string>
     <string name="direct_room_start_search">Empieza a escribir para ver resultados</string>
     <string name="direct_room_filter_hint">Filtrar por usuario o ID…</string>
     <string name="joining_room">Entrando en la sala…</string>
@@ -1818,7 +1818,7 @@ Por favor permite el acceso en la próxima ventana emergente para descubrir usua
     <string name="room_join_rules_invite_by_you">Hiciste la sala solo por invitación.</string>
     <string name="login_server_matrix_org_text">Únase gratis a millones en el servidor público más grande</string>
     <string name="login_signin_sso">Continuar con SSO</string>
-    <string name="login_server_url_form_modular_hint">Dirección de servicios de Element Matrix</string>
+    <string name="login_server_url_form_modular_hint">Dirección de servicios de Matrix</string>
     <string name="login_server_url_form_common_notice">Ingrese la dirección del servidor que desea utilizar</string>
     <string name="login_reset_password_notice">Se enviará un correo electrónico de verificación a su bandeja de entrada para confirmar la configuración de su nueva contraseña.</string>
     <string name="login_reset_password_submit">Siguiente</string>
@@ -1885,10 +1885,10 @@ Por favor permite el acceso en la próxima ventana emergente para descubrir usua
         <item quantity="other">Se han enviado demasiadas solicitudes. Puedes volver a intentarlo en %1$d segundos…</item>
     </plurals>
     <string name="login_connect_using_matrix_id_notice">Alternativamente, si ya tiene una cuenta y conoce su identificador Matrix y su contraseña, puede usar este método:</string>
-    <string name="login_connect_using_matrix_id_submit">Iniciar sesión con Matrix ID</string>
-    <string name="login_signin_matrix_id_title">Iniciar sesión con Matrix ID</string>
+    <string name="login_connect_using_matrix_id_submit">Iniciar sesión con Vinix Blast ID</string>
+    <string name="login_signin_matrix_id_title">Iniciar sesión con Vinix Blast ID</string>
     <string name="login_signin_matrix_id_notice">Si configura una cuenta en un servidor doméstico, use su ID de Matrix (por ejemplo, @user: dominio.com) y contraseña a continuación.</string>
-    <string name="login_signin_matrix_id_hint">ID de Matrix</string>
+    <string name="login_signin_matrix_id_hint">ID de Vinix Blast</string>
     <string name="login_signin_matrix_id_password_notice">Si no conoce su contraseña, vuelva a restablecerla.</string>
     <string name="login_signin_matrix_id_error_invalid_matrix_id">Éste no es un identificador de usuario válido. Formato esperado: \'@user:homeserver.org\'</string>
     <string name="autodiscover_well_known_error">No se pudo encontrar un servidor de inicio válido. Por favor verifique su identificador</string>

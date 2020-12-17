@@ -174,7 +174,7 @@
     <string name="user_directory_header">User directory</string>
     <string name="matrix_only_filter">Matrix contacts only</string>
     <string name="no_conversation_placeholder">No conversations</string>
-    <string name="no_contact_access_placeholder">You didn’t allow Element to access your local contacts</string>
+    <string name="no_contact_access_placeholder">You didn’t allow Blast to access your local contacts</string>
     <string name="no_result_placeholder">No results</string>
     <string name="no_more_results">No more results</string>
     <string name="people_no_identity_server">No identity server configured.</string>
@@ -237,7 +237,7 @@
     <string name="call_failed_no_ice_use_alt">Try using %s</string>
     <string name="call_failed_dont_ask_again">Do not ask me again</string>
 
-    <string name="call_failed_no_connection">Element Call Failed</string>
+    <string name="call_failed_no_connection">Blast Call Failed</string>
     <string name="call_failed_no_connection_description">Failed to establish real time connection.\nPlease ask the administrator of your homeserver to configure a TURN server in order for calls to work reliably.</string>
 
     <string name="call_select_sound_device">Select Sound Device</string>
@@ -617,7 +617,7 @@
         <item quantity="one">%d selected</item>
         <item quantity="other">%d selected</item>
     </plurals>
-    <string name="malformed_id">Malformed ID. Should be a Vinix Blast ID like \'@localpart:domain\'</string>
+    <string name="malformed_id">Malformed ID. Should be a Vinix Blast ID</string>
     <string name="room_details_people_invited_group_name">INVITED</string>
     <string name="room_details_people_present_group_name">JOINED</string>
 
