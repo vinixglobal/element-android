@@ -92,6 +92,7 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
                 SignMode.SignInWithMatrixId -> {
                     loginField.setAutofillHints(HintConstants.AUTOFILL_HINT_USERNAME)
                     passwordField.setAutofillHints(HintConstants.AUTOFILL_HINT_PASSWORD)
+                    loginHomeserver.setText(ServerUrlsRepository.getLastHomeServerUrl(requireContext()))
                 }
             }.exhaustive
         }
@@ -107,7 +108,7 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
         var homeserver = loginHomeserver.text.toString()
         if(!homeserver.equals(R.string.matrix_org_server_url)){
             //save url in preferences
-            ServerUrlsRepository.saveUrl(requireContext(), homeserver)
+            ServerUrlsRepository.saveHomeserverUrl(requireContext(), homeserver)
         }
 
         if (!(login.contains("@", ignoreCase = true) && login.contains(":", ignoreCase = true))) {
@@ -186,9 +187,7 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
                     loginServerIcon.isVisible = false
                     loginTitle.text = getString(resId, state.homeServerUrl.toReducedUrl())
                     loginNotice.text = getString(R.string.login_server_other_text)
-                    //val defaultHomeServer = ServerUrlsRepository.getLastHomeServerUrl(requireContext())
-                    //loginHomeserver.setText()
-                    loginHomeserver.setText(getString(R.string.login_homeserver_url))
+                    loginHomeserver.setText(ServerUrlsRepository.getLastHomeServerUrl(requireContext()))
 
                 }
                 ServerType.Unknown   -> Unit /* Should not happen */

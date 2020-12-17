@@ -61,7 +61,7 @@ object ServerUrlsRepository {
                 }
     }
 
-    fun saveUrl(context: Context, homeServerUrl: String){
+    fun saveHomeserverUrl(context: Context, homeServerUrl: String){
         DefaultSharedPreferences.getInstance(context).edit{
             putString(HOME_SERVER_URL_PREF, homeServerUrl)
         }
