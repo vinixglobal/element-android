@@ -59,6 +59,8 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
     private var passwordShown = false
     private var isSignupMode = false
 
+    private var homeserver = ""
+
     // Temporary patch for https://github.com/vector-im/riotX-android/issues/1410,
     // waiting for https://github.com/matrix-org/synapse/issues/7576
     private var isNumericOnlyUserIdForbidden = false
@@ -70,7 +72,7 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
 
         setupSubmitButton()
         setupPasswordReveal()
-
+        loginHomeserver.setText(ServerUrlsRepository.getLastHomeServerUrl(requireContext()))
         passwordField.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
                 submit()
@@ -92,7 +94,7 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
                 SignMode.SignInWithMatrixId -> {
                     loginField.setAutofillHints(HintConstants.AUTOFILL_HINT_USERNAME)
                     passwordField.setAutofillHints(HintConstants.AUTOFILL_HINT_PASSWORD)
-                    loginHomeserver.setText(ServerUrlsRepository.getLastHomeServerUrl(requireContext()))
+
                 }
             }.exhaustive
         }
@@ -101,16 +103,19 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
     @OnClick(R.id.loginSubmit)
     fun submit() {
         cleanupUi()
-        //Add logic to avoid concatenating this if a "@" is found
+        homeserver = loginHomeserver.text.toString()
 
-
-        var login = loginField.text.toString()
-        var homeserver = loginHomeserver.text.toString()
-        if(homeserver.startsWith("http://")) {
+        if (homeserver.startsWith("http://")) {
             homeserver = homeserver.substring(7)
-        }else if(homeserver.startsWith("https://"))    {
+        } else if (homeserver.startsWith("https://"))    {
             homeserver = homeserver.substring(8)
         }
+
+        if(homeserver.startsWith("www.")) {
+            homeserver = homeserver.substring(4)
+        }
+
+        var login = loginField.text.toString()
 
         if (!(login.contains("@", ignoreCase = true) && login.contains(":", ignoreCase = true))) {
             login = "@" + login + ":" + homeserver
@@ -138,11 +143,8 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
         }
 
         if (error == 0) {
-            if(!homeserver.equals(R.string.matrix_org_server_url)){
-                //save url in preferences
-                ServerUrlsRepository.saveHomeserverUrl(requireContext(), homeserver)
-            }
             loginViewModel.handle(LoginAction.LoginOrRegister(login, password, getString(R.string.login_default_session_public_name)))
+
         }
     }
 
@@ -304,7 +306,12 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
                 }
             }
             // Success is handled by the LoginActivity
-            is Success -> Unit
+            is Success -> {
+                Unit
+                if(!homeserver.equals(R.string.matrix_org_server_url)){
+                    ServerUrlsRepository.saveHomeserverUrl(requireContext(), homeserver)
+                }
+            }
         }
 
         when (state.asyncRegistration) {

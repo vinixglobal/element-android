@@ -32,8 +32,6 @@ class LoginSplashFragment @Inject constructor() : AbstractLoginFragment() {
     @OnClick(R.id.loginSplashSubmit)
     fun getStarted() {
         loginViewModel.handle(LoginAction.UpdateSignMode(SignMode.SignInWithMatrixId))
-        //loginViewModel.handle(LoginAction.UpdateServerType(ServerType.MatrixOrg))
-        //loginViewModel.handle(LoginAction.UpdateSignMode(SignMode.SignIn))
     }
 
     override fun resetViewModel() {
