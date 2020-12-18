@@ -204,7 +204,9 @@ class LoginFragment @Inject constructor() : AbstractLoginFragment() {
     }
 
     private fun setupButtons(state: LoginViewState) {
-        forgetPasswordButton.isVisible = state.signMode == SignMode.SignIn
+        //forgetPasswordButton.isVisible = state.signMode == SignMode.SignIn
+        //Always show the Forgot Password feature
+        forgetPasswordButton.isVisible = true
 
         loginSubmit.text = getString(when (state.signMode) {
             SignMode.Unknown            -> error("developer error")
