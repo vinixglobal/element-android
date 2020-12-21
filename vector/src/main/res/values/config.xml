@@ -19,7 +19,7 @@
     <string name="pusher_app_id" translatable="false">com.blast.vinix.android</string>
 
     <!-- preferred jitsi domain -->
-    <string name="preferred_jitsi_domain" translatable="false">jitsi.riot.im</string>
+    <string name="preferred_jitsi_domain" translatable="false">meet.vinixglobal.com</string>
 
     <string-array name="room_directory_servers" translatable="false">
         <item>vinix.im</item>

@@ -96,11 +96,11 @@ class VectorSettingsHelpAboutFragment @Inject constructor(
         }
 
         // third party notice
-        //findPreference<VectorPreference>(VectorPreferences.SETTINGS_THIRD_PARTY_NOTICES_PREFERENCE_KEY)!!
-        //        .onPreferenceClickListener = Preference.OnPreferenceClickListener {
-        //    activity?.displayInWebView(VectorSettingsUrls.THIRD_PARTY_LICENSES)
-        //    false
-        //}
+        findPreference<VectorPreference>(VectorPreferences.SETTINGS_THIRD_PARTY_NOTICES_PREFERENCE_KEY)!!
+                .onPreferenceClickListener = Preference.OnPreferenceClickListener {
+            activity?.displayInWebView(VectorSettingsUrls.THIRD_PARTY_LICENSES)
+            false
+        }
 
         //// Note: preference is not visible on F-Droid build
         //findPreference<VectorPreference>(VectorPreferences.SETTINGS_OTHER_THIRD_PARTY_NOTICES_PREFERENCE_KEY)!!

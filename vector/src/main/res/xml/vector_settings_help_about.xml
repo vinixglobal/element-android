@@ -35,4 +35,13 @@
         android:key="SETTINGS_PRIVACY_POLICY_PREFERENCE_KEY"
         android:title="@string/settings_privacy_policy" />
 
+    <com.blast.vinix.core.preference.VectorPreference
+        android:key="SETTINGS_THIRD_PARTY_NOTICES_PREFERENCE_KEY"
+        android:title="@string/settings_third_party_notices" />
+
+    <com.blast.vinix.core.preference.VectorPreference
+        android:key="SETTINGS_OTHER_THIRD_PARTY_NOTICES_PREFERENCE_KEY"
+        android:title="@string/settings_other_third_party_notices"
+        app:isPreferenceVisible="@bool/isGplay" />
+
 </androidx.preference.PreferenceScreen>

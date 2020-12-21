@@ -199,7 +199,7 @@ abstract class VectorBaseFragment : BaseMvRxFragment(), HasScreenInjector {
     }
 
     protected fun showLoadingDialog(message: CharSequence? = null, cancelable: Boolean = false) {
-        progress = ProgressDialog(requireContext()).apply {
+        progress = ProgressDialog(requireContext(), R.style.Widget_MaterialComponents_CircularProgressIndicator).apply {
             setCancelable(cancelable)
             setMessage(message ?: getString(R.string.please_wait))
             setProgressStyle(ProgressDialog.STYLE_SPINNER)

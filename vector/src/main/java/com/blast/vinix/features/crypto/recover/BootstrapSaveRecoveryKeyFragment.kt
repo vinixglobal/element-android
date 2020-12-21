@@ -62,7 +62,7 @@ class BootstrapSaveRecoveryKeyFragment @Inject constructor(
         val intent = Intent(Intent.ACTION_CREATE_DOCUMENT)
         intent.addCategory(Intent.CATEGORY_OPENABLE)
         intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_TITLE, "element-recovery-key.txt")
+        intent.putExtra(Intent.EXTRA_TITLE, "blast-recovery-key.txt")
 
         try {
             sharedViewModel.handle(BootstrapActions.SaveReqQueryStarted)
